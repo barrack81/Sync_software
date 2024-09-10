@@ -212,6 +212,35 @@ body {
 
 
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  animation: bounce 2s infinite;
+}
+
+.whatsapp-float img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-float:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 
 
 /*-----------------------------------*\
@@ -674,10 +703,6 @@ body {
 }
 
 .copyright-link:is(:hover, :focus) { text-decoration: none; }
-
-
-
-
 
 /*-----------------------------------*\
   #GO TO TOP
