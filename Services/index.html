@@ -1,57 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sync Software - Customer Support</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">Sync_Software</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <a href="#" class="quote-btn">Request A Quote</a>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Customer Support Section -->
-    <section class="customer-support">
-        <div class="content">
-            <h2>Stellar support for your buyers and sellers</h2>
-            <p>You may be dropshipping, but you don't want to drop calls. Deliver the five-star support that will keep your customers coming back and your sellers satisfied. Industry brands bolster their support operations with our global infrastructure, facilitating positive omnichannel experiences and generating up-sell and cross-sell opportunities with an empathetic frontline.</p>
-            <ul>
-                <li class="icon-email">Email, chat, social media, and voice channel support</li>
-                <li class="icon-concierge">Concierge services for major sellers</li>
-                <li class="icon-sales">Sales growth and retention</li>
-                <li class="icon-consulting">CX consulting</li>
-                <li class="icon-omnichannel">Omnichannel CX</li>
-                <li class="icon-billing">Billing support</li>
-            </ul>
-        </div>
-        <div class="image-container">
-            <img src="./image/phone.webp" alt="Customer Support">
-        </div>
-    </section>
+        <link rel="shortcut icon" href="assets/img/logo1.png" type="image/png">
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/+254793004761" class="whatsapp-float" target="_blank">
-        <img src="./image/whatsapp.svg" alt="WhatsApp">
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Services</title>
+    </head>
+    <body>
+            <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+254793004761" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
+        <img src="../assets/images/whatsapp.svg" alt="WhatsApp">
     </a>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../index.html" class="nav__logo">Sync_Software</a>
 
-    <script src="script.js"></script>
-</body>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Students</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/drone1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Let's Make It Happen</span>
+                        <h1 class="home__data-title">Expert Guidance <br> For The <b>Best <br>Software Technology</b></h1>
+                        <a href="tel:+254793004761" class="button">Contact Us</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">What We'll Offer You</span>
+                            <a href="#about" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-down-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/logo1.png" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Custom Web Development</h2>
+                        <p class="about__description">At Sync Software, we specialize in crafting custom web solutions that are tailored to meet the unique needs of your business.
+                             We believe that every business is different, and your website should reflect your brand's identity, cater to your specific goals,
+                              and provide a user experience that sets you apart from the competition.
+                            Our custom web development services begin with a deep understanding of your business.
+                             We work closely with you to design a website that not only looks stunning but also functions seamlessly.
+                              Every aspect of your site is meticulously planned and executed, from the user interface to the user experience, ensuring that your customers find it intuitive, engaging, and easy to navigate.
+                        </p>
+                        <a href="tel:+254793004761" class="button">Call Us</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/webdev.png" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about"></section>
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Mobile App Development</h2>
+                        <p class="about__description">In today’s fast-paced digital world, having a mobile app is essential for businesses 
+                            looking to connect with customers on a more personal and immediate level. At Sync Software, 
+                            we specialize in mobile app development that transforms your ideas into intuitive, high-performing apps for both iOS and Android platforms.
+                            Our approach to mobile app development is centered around understanding your business goals and the needs of your users.
+                             We work closely with you to design an app that not only looks great but also delivers a seamless and engaging user experience. Whether you're looking to build a simple app for internal use or a complex,
+                              feature-rich app for a global audience, our team has the expertise to make it happen.
+                        </p>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/phone.webp" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about section" id="about"></section>
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">AI and ML Solutions</h2>
+                        <p class="about__description">In an era where data drives decision-making, leveraging Machine Learning (ML) and Artificial Intelligence (AI)
+                             can give your business a significant competitive edge. At Sync Software, we specialize in developing custom ML and AI 
+                             solutions that transform raw data into actionable insights, enabling smarter decisions, streamlined operations, and enhanced customer experiences.
+                                Our ML and AI solutions are designed to meet the unique needs of your business. Whether you’re looking to automate processes, predict future trends, or personalize customer 
+                                interactions, we tailor our solutions to help you achieve your specific goals. We work closely with you to understand your challenges and opportunities, creating intelligent systems that learn from your data and continuously improve over time.
+                        </p>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/AI.png" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about section" id="about"></section>
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">API and Backend Development</h2>
+                        <p class="about__description">
+                            At the heart of any robust software application lies a powerful backend and well-structured APIs.
+                             At Sync Software, we specialize in API and backend development, crafting the essential components that 
+                             power your applications and enable seamless communication between different systems.
+                            Our backend development services focus on building secure, scalable, and efficient server-side 
+                            logic that forms the backbone of your application. Whether you’re developing a web app, mobile app, or complex enterprise system, our backend solutions ensure that your application runs smoothly, handles data efficiently, and supports your business’s growing needs. We work with various programming languages and frameworks, selecting the best tools to meet your specific requirements.
+                        </p>
+                        <a href="tel:+254793004761" class="button">Call Us</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/backend.png" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Final Year Student?<br>We Got You Covered</h2>
+                <p class="video__description">At Sync Software, we believe in nurturing the next generation of innovators and tech leaders.
+                     Our Student's Center is dedicated to helping final-year students excel in their academic projects by providing expert guidance and support in the fields of technology and software development.
+                    Navigating the complexities of a final year project can be challenging, but you don’t have to do it alone. Whether you’re working on a web application, a mobile app,
+                     or a machine learning model, our team of experienced professionals is here to assist you every step of the way.
+                     We offer tailored support that aligns with your project goals, ensuring that you not only meet your academic requirements but also gain valuable, hands-on experience in real-world software development. We Got you all the way from Research Proposals to Documentation
+                </p>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/ai.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">AI & ML</h2>
+                                <span class="discover__description">Projects</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/programming.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Web Frameworks</h2>
+                                <span class="discover__description">Projects</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/research.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Research Proposals</h2>
+                                <span class="discover__description">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Leave your Contact-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Got an Idea? <br>Talk To Us</h2>
+                        <p class="subscribe__description">Got any question or guidance, be sure to leave us a message
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+    
+                            <button class="button">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description">Choose Sync Software for tailored solutions that combine innovation, reliability, and security. We don’t just build software – we craft digital experiences that drive your success.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-whatsapp-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="../index.html#section about" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plan</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel:+2540793004761" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel:+2540793004761" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2024 Sync_Software. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
